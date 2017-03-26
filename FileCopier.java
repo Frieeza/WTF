@@ -130,7 +130,7 @@ public class FileCopier extends JFrame implements ActionListener,
 
 	@Override
 	public void actionPerformed(ActionEvent e) { // tu tez mniej wiecej wiem o
-													// co chodzi
+							// co chodzi
 		if ("Copy".equals(btnCopy.getText())) {
 			File source = new File("C:\\Javatesting/copy");
 			File target = new File("C:\\Javatesting/copied");
@@ -168,8 +168,8 @@ public class FileCopier extends JFrame implements ActionListener,
 
 	@Override
 	public void propertyChange(PropertyChangeEvent evt) { // czemu to musi byc?
-															// jak nie ma tego
-															// to wywala b³ad
+								// jak nie ma tego
+								// to wywala bl/ad
 		// if ("progress".equals(evt.getPropertyName())) {
 		// int progress = (Integer) evt.getNewValue();
 		// progressAll.setValue(progress);
@@ -263,7 +263,7 @@ public class FileCopier extends JFrame implements ActionListener,
 					bos.write(theByte);
 
 					setProgress((int) (copiedBytes++ * 100 / totalBytes));
-					publish((int) (soFar++ * 100 / fileBytes));   // i to tez nie wiem co robi
+					publish((int) (soFar++ * 100 / fileBytes));   		// i to tez nie wiem co robi
 				}
 
 				bis.close();
